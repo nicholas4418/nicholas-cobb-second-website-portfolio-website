@@ -46,7 +46,7 @@ header nav {
     padding-top: 15px;
 }
 
-a {
+#navs {
     border-bottom: 4px solid;
     color: var(--tertiary-color);
     padding-bottom: 3px;
@@ -116,11 +116,61 @@ section {
 .labels {
     border-right: 10px solid;
     color: var(--primary-color);
-    display: inline-block;
     flex-basis: 25%;
     font-size: 50px;
     margin-right: 40px;
     padding: 25px;
     text-align: right;
 
+}
+
+
+.gal {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 66%;
+    gap: 12px;
+}
+
+.gal-item-1 {
+    
+    object-fit: cover;
+    border: 8px var(--primary-color) solid;
+}
+
+
+.gal-item-2, .gal-item-3, .gal-item-4, .gal-item-5 {
+    
+    object-fit: cover;
+    border: 8px var(--primary-color) solid;
+}
+
+figcaption {
+    background-color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: 20px;
+    margin-top: -60px;
+    position: absolute;
+}
+
+.footer-links {
+    flex: 150;
+}
+
+.footer-links, #footer-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    list-style: none;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.footer-links, #footer-ul, #footer-li {
+    
+    margin: 0 30px;
+    font-size: 25px;
+    padding: 30px;
 }
